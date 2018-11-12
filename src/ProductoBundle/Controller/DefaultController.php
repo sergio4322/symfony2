@@ -12,6 +12,8 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('ProductoBundle:Default:index.html.twig');
+    	$Productos = $this->getDoctrine()-> getRepository('ProductoBundle:Producto')->findAll();
+        return $this->render('producto/index.html.twig',
+        						['productos'=> $Productos]);
     }
 }
