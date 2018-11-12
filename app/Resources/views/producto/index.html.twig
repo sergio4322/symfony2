@@ -11,6 +11,7 @@
 	            <p>Precio: ${{producto.getPrice()}}</p>
                 <p>Cantidad: {{producto.getStock()}}</p>
 	            <a href="#" class="button expanded">Buy</a>
+                <a href="{{path('Product_view',{id:producto.id})}}" class="button expanded">Ver Producto</a>
             </div>
             {%endfor%}
 

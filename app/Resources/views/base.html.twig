@@ -9,6 +9,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
         <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
         {% endblock %}
+        {%block header%}
+          <div class="top-bar">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"> E-comers-ARG!</li>
+                    <li class="has-submenu">
+                    <a href="#">Principal</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                    <li><input type="search" placeholder="Buscar"></li>
+                    <li><button type="{{path('Product_list')},{"method='GET'}}} class="button">Buscar</button></li>
+                    <a href="{{path('Product_view',{id:producto.id})}}" class="button expanded">Buscar</a>
+
+                    </ul>
+                </div>
+            </div>
+        {%endblock%}
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
