@@ -20,13 +20,15 @@ class ProductController extends Controller
      */
     public function addToCartAction($id, $quantity)
     {
+        
         $producto = $this->getDoctrine()-> getRepository('ProductoBundle:Producto')->find($id);
+
         if(null === $producto)
         {
             throw new \Exception("Producto not found");
         }
-    
         $cartService = $this->get('app.cart');
+
         $cartService->add($producto);
         die();
     }

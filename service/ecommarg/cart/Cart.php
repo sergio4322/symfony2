@@ -1,7 +1,8 @@
 <?php 
 namespace ecommarg\cart;
 use ecommarg\cart\SaveAdapterInterface as SaveAdapter;
-use ecommarg\cart\ProductInterface as Product;
+use ecommarg\cart\ProductoInterface as Product;
+
 Class Cart implements CartInterface{
 	
 	private	$adapter;

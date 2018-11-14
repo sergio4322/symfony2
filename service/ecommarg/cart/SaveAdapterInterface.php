@@ -7,6 +7,9 @@ use ecommarg\cart\ProductoInterface as Product;
 		public function set($key, $value);
 
 		public function get($id);
+
+		public function getAll();
+
 	}
 
 

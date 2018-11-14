@@ -4,8 +4,6 @@
 	interface ProductoInterface extends \JsonSerializable
 	{
 		public function getId();
-
-
 	}
 
 
