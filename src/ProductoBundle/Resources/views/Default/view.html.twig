@@ -2,20 +2,20 @@
 {% block body %}
     <h1> Producto </h1>
      
-<article class="grid-container">
-<div class="grid-x cell">
-<nav aria-label="You are here:" role="navigation">
-<ul class="breadcrumbs">
-<li><a href="#">Home</a></li>
-<li><a href="#">Features</a></li>
-<li class="disabled">Gene Splicing</li>
-<li>
-<span class="show-for-sr">Current: </span> Cloning
-</li>
-</ul>
-</nav>
-</div>
-<div class="grid-x grid-margin-x">
+	<article class="grid-container">
+		<div class="grid-x cell">
+			<nav aria-label="You are here:" role="navigation">
+				<ul class="breadcrumbs">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Features</a></li>
+					<li class="disabled">Gene Splicing</li>
+					<li>
+						<span class="show-for-sr">Current: </span> Cloning
+					</li>
+				</ul>
+			</nav>
+		</div>
+	<div class="grid-x grid-margin-x">
 <div class="medium-6 cell">
 <img class="thumbnail" src="https://placehold.it/650x350">
 <div class="grid-x grid-padding-x small-up-4">
@@ -46,7 +46,7 @@
 <input type="text" id="middle-label" placeholder="One fish two fish">
 </div>
 </div>
-<a href="#" class="button large expanded">Agregar al carrito</a>
+<a href="{{path('Product_view_cart',{id:producto.id})}}" class="button large expanded">Agregar al carrito</a>
 <div class="small secondary expanded button-group">
 <a class="button">Facebook</a>
 <a class="button">Twitter</a>
